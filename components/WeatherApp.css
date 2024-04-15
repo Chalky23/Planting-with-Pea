@@ -1,0 +1,20 @@
+.weatherApp {
+    height: 20vh;
+    width: 80vw;
+    background-color: rgba(0, 139, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.days {
+    align-items: left;
+}

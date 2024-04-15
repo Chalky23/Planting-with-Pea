@@ -1,6 +1,7 @@
 import "./WeatherApp.css";
 import { useEffect, useState } from 'react';
 
+// define the initial data and therefore imply the types 
 const initialWeatherData = {
     current: {
         temp_c: 0,
@@ -48,10 +49,11 @@ const WeatherApp = () => {
     return (
         <div className="weatherApp">
             <h2>Melksham 3 Day Forecast</h2>
-            <span className="dayOne">Current: {weatherData.current.condition.text || 'Loading...'}, {weatherData.current.temp_c}°C</span>
-            <span className="dayTwo">Tomorrow: {weatherData.forecast.forecastday[1].day.condition.text || 'Loading...'}, {weatherData.forecast.forecastday[1].day.avgtemp_c || 0}°C</span>
-            <span className="dayThree">The day after: {weatherData.forecast.forecastday[2].day.condition.text || 'Loading...'}, {weatherData.forecast.forecastday[2].day.avgtemp_c || 0}°C</span>
-
+            <div className="days">
+                <span className="dayOne">Current: {weatherData.current.condition.text || 'Loading...'}, {weatherData.current.temp_c}°C</span>
+                <span className="dayTwo">Tomorrow: {weatherData.forecast.forecastday[1].day.condition.text || 'Loading...'}, {weatherData.forecast.forecastday[1].day.avgtemp_c || 0}°C</span>
+                <span className="dayThree">The day after: {weatherData.forecast.forecastday[2].day.condition.text || 'Loading...'}, {weatherData.forecast.forecastday[2].day.avgtemp_c || 0}°C</span>
+            </div>
         </div>
     );
 }
