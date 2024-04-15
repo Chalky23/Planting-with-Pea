@@ -6,7 +6,7 @@ export default function Home() {
       src="/wireframe.png"
       alt="wireframe"
       width="300"
-      height="680"
+      height="800"
     />
   
   )
