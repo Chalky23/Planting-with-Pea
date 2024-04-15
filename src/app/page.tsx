@@ -1,13 +1,16 @@
+"use client"
+
 import Image from "next/image";
+import WeatherApp from "../../components/WeatherApp";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
-    <Image 
-      src="/wireframe.png"
-      alt="wireframe"
-      width="300"
-      height="800"
-    />
-  
+    <>
+    <Header />
+    <WeatherApp />
+    <Footer />
+    </>
   )
 }
