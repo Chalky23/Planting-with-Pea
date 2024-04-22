@@ -48,7 +48,7 @@ const WeatherApp = () => {
     const fetchWeatherData = async () => {
       try {
         const response = await fetch(
-          `http://api.weatherapi.com/v1/forecast.json?key=d39316be901d4606a23151312241504&q=${searchTerm}&days=3&aqi=no&alerts=no`
+          `https://api.weatherapi.com/v1/forecast.json?key=d39316be901d4606a23151312241504&q=${searchTerm}&days=3&aqi=no&alerts=no`
         );
         const data = await response.json();
         console.log(data);

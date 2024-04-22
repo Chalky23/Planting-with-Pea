@@ -24,7 +24,7 @@ h2 {
 }
 
 .searchBar {
-    width:auto
+    color: black;
 }
 
 .currentWeather, .dayOneWeather, .dayTwoWeather {
