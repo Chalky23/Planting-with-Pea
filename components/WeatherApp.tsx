@@ -27,7 +27,6 @@ const WeatherApp = () => {
     forecast: {
       forecastday: [
         {
-          date: String,
           day: {
             avgtemp_c: 0,
             condition: {
@@ -123,7 +122,7 @@ const WeatherApp = () => {
               />
             </div>
             <div className="dayTwoWeather">
-              <h3>{weatherData.forecast.forecastday[2].date}</h3>
+              <h3>The day after</h3>
               <span>
                 {weatherData.forecast.forecastday?.[2]?.day.condition.text}
                 <br />
