@@ -1,5 +1,5 @@
 .weatherApp {
-    height: 24vh;
+    height: 31vh;
     width: 80vw;
     background: linear-gradient(to bottom right, #808080, #35363f);
     display: flex;
@@ -8,6 +8,8 @@
     color: white;
     justify-content: center;
     align-items: center;
+    max-width: 80vw;
+    margin-left: 10vw
 }
 
 h2 {
@@ -31,4 +33,11 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 1vw 1vw 1vw 1vw;
+}
+
+h3 {
+    margin-top: 1vw;
+    font-weight: 600;
+    color: lightgreen 
 }

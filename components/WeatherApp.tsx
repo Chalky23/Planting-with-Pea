@@ -27,6 +27,7 @@ const WeatherApp = () => {
     forecast: {
       forecastday: [
         {
+          date: String,
           day: {
             avgtemp_c: 0,
             condition: {
@@ -90,9 +91,10 @@ const WeatherApp = () => {
     <div className="weatherApp">
       {weatherData.current && ( // Check if weatherData.current exists
         <>
-          <h2>{weatherData.location.name} Weather Forecast</h2>
+          <h2>{weatherData.location.name} 3 Day Weather Forecast</h2>
           <div className="weather">
             <div className="currentWeather">
+              <h3>Today</h3>
               <span>
                 {weatherData.current.condition.text}
                 <br />
@@ -106,6 +108,7 @@ const WeatherApp = () => {
               />
             </div>
             <div className="dayOneWeather">
+              <h3>Tomorrow</h3>
               <span>
                 {weatherData.forecast.forecastday?.[1]?.day.condition.text}
                 <br />
@@ -120,6 +123,7 @@ const WeatherApp = () => {
               />
             </div>
             <div className="dayTwoWeather">
+              <h3>{weatherData.forecast.forecastday[2].date}</h3>
               <span>
                 {weatherData.forecast.forecastday?.[2]?.day.condition.text}
                 <br />
