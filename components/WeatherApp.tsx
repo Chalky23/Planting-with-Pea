@@ -94,7 +94,7 @@ const WeatherApp = () => {
           <div className="weather">
             <div className="currentWeather">
               <h3>Today</h3>
-              <span>
+              <span className="condition">
                 {weatherData.current.condition.text}
                 <br />
               </span>
@@ -108,7 +108,7 @@ const WeatherApp = () => {
             </div>
             <div className="dayOneWeather">
               <h3>Tomorrow</h3>
-              <span>
+              <span className="condition">
                 {weatherData.forecast.forecastday?.[1]?.day.condition.text}
                 <br />
               </span>
@@ -123,7 +123,7 @@ const WeatherApp = () => {
             </div>
             <div className="dayTwoWeather">
               <h3>The day after</h3>
-              <span>
+              <span className="condition">
                 {weatherData.forecast.forecastday?.[2]?.day.condition.text}
                 <br />
               </span>

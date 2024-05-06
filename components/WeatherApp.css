@@ -11,7 +11,7 @@
     max-width: 80vw;
     /* margin-left: 10vw; */
     margin: auto;
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 
 h2 {
@@ -19,6 +19,7 @@ h2 {
     font-weight: bold;
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 .weather {
@@ -28,7 +29,7 @@ h2 {
 }
 
 .searchBar {
-    max-width: 50vw;
+    width: fit-content;
     color: black;
 }
 
@@ -46,10 +47,15 @@ h2 {
 h3 {
     margin-top: 1vw;
     font-weight: 600;
-    color: lightgreen 
+    color: lightgreen;
+    justify-content: center;
 }
 
 #weatherSearchInput {
     padding: 3px;
     border-radius: 5px;
+}
+
+.condition {
+    display: block;
 }
