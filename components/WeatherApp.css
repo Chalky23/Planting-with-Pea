@@ -26,6 +26,7 @@ h2 {
 }
 
 .searchBar {
+    max-width: fit-content;
     color: black;
 }
 
