@@ -15,7 +15,11 @@ export default function Chatbot() {
   return (
     <div className="chatbot">
       <h1>
-        <b>Hi, I&apos;m Pea! Ask me anything about gardening.</b>
+        <b>
+          Hi, I&apos;m Pea!
+          <br />
+          Ask me anything about gardening.
+        </b>
       </h1>
       {messages.map((m: Message) => (
         <div key={m.id} className="chatHistory">

@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div className="home">
       <Header />
-      <WeatherApp />
       <Chatbot />
+      <WeatherApp />
       <Footer />
     </div>
   );
