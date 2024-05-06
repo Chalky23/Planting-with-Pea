@@ -45,3 +45,8 @@ h3 {
     font-weight: 600;
     color: lightgreen 
 }
+
+#weatherSearchInput {
+    padding: 3px;
+    border-radius: 5px
+}
