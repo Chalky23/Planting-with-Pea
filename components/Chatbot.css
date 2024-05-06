@@ -1,0 +1,24 @@
+.chatbot {
+    margin-top: 5vh;
+    background-color: rgba(0, 139, 0, 0.5);
+    max-width: 30vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: 60vw;
+    border-radius: 5px;
+    border: black 1px solid;
+    padding: 10px;
+}
+
+.inputField {
+    background-color: rgba(191, 255, 191, 0.5);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    max-width: 30vw;
+    margin-top: 5px
+}
+
+.chatHistory {
+    margin-top: 5px;
+}

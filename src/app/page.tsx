@@ -1,15 +1,17 @@
-"use client"
+"use client";
 
 import WeatherApp from "../../components/WeatherApp";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Chatbot from "../../components/Chatbot";
 
 export default function Home() {
   return (
-    <>
-    <Header />
-    <WeatherApp />
-    <Footer />
-    </>
-  )
+    <div className="home">
+      <Header />
+      <WeatherApp />
+      <Chatbot />
+      <Footer />
+    </div>
+  );
 }

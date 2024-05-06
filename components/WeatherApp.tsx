@@ -153,7 +153,9 @@ const WeatherApp = () => {
           onChange={handleSearchChange}
           id="weatherSearchInput"
         />
-        <button type="submit">Search</button>
+        <button type="submit" className="search">
+          Search
+        </button>
       </form>
     </div>
   );

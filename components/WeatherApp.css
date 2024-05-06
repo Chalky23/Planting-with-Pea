@@ -1,5 +1,5 @@
 .weatherApp {
-    height: 31vh;
+    height: 38vh;
     width: 80vw;
     background: linear-gradient(to bottom right, #808080, #35363f);
     display: flex;
@@ -27,6 +27,10 @@ h2 {
 
 .searchBar {
     color: black;
+}
+
+.search {
+    margin-left: 8px;
 }
 
 .currentWeather, .dayOneWeather, .dayTwoWeather {

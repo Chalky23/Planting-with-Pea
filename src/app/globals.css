@@ -76,3 +76,8 @@ textarea:not([rows]) {
 :target {
   scroll-margin-block: 5ex;
 }
+
+.home {
+  display: flex;
+  flex-direction: column;
+}
